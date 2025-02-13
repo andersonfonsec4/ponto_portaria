@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto Eletrônico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="fullscreenBtn" class="top-right">Tela Cheia</button>
+
+    <h1>Ponto Eletrônico</h1>
+    <form id="funcionarioForm">
+        <label for="funcionario">Funcionário:</label>
+        <input type="text" id="funcionario" required>
+        
+        <label for="turno">Turno de Preferência:</label>
+        <select id="turno" required>
+            <option value="Manhã">Manhã</option>
+            <option value="Tarde">Tarde</option>
+            <option value="Noite">Noite</option>
+        </select>
+    </form>
+
+    <form id="registroForm">
+        <label for="acao">Ação:</label>
+        <select id="acao" required>
+            <option value="Entrada">Entrada</option>
+            <option value="Saída para o Intervalo">Saída para o Intervalo</option>
+            <option value="Volta do Intervalo">Volta do Intervalo</option>
+            <option value="Saída">Saída</option>
+        </select>
+
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h2>Registros</h2>
+    <ul id="registroLista"></ul>
+
+    <div class="buttons">
+        <button id="printBtn">Imprimir Relatório</button>
+        <button id="saveBtn">Salvar Relatório</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
